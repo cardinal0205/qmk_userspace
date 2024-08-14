@@ -156,4 +156,8 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 #ifdef RGB_MATRIX_ENABLE
 // Forward-declare this helper function since it is defined in rgb_matrix.c.
 void rgb_matrix_update_pwm_buffers(void);
+
+void suspend_power_down_user(void) {
+    matrix_power_down();
+}
 #endif

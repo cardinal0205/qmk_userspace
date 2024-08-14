@@ -394,8 +394,9 @@ bool shutdown_kb(bool jump_to_bootloader) {
 #endif // RGBLIGHT_ENABLE
 #ifdef RGB_MATRIX_ENABLE
     void rgb_matrix_update_pwm_buffers(void);
-    rgb_matrix_set_color_all(RGB_RED);
+    //rgb_matrix_set_color_all(RGB_RED);
     rgb_matrix_update_pwm_buffers();
+    rgb_matrix_set_suspend_state(true);
 #endif // RGB_MATRIX_ENABLE
     return true;
 }
