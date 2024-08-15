@@ -55,13 +55,6 @@ static uint16_t auto_pointer_layer_timer = 0;
 #    define SNIPING KC_NO
 #endif // !POINTING_DEVICE_ENABLE
 
-enum combos {
-  ALT_SFT
-};
-const uint16_t PROGMEM switch_lang[] = {KC_LALT, KC_LSFT, COMBO_END};
-combo_t key_combos[] = {
-	COMBO(switch_lang, 
-
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [LAYER_BASE] = LAYOUT(
